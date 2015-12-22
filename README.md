@@ -1,4 +1,4 @@
-Symfony and OXID
+SymfOxid
 ========================
 
 OXID integration with Symfony Components.
