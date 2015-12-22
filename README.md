@@ -1,7 +1,7 @@
 Symfony and OXID
 ========================
 
-Integration for OXID with Symfony Components.
+OXID integration with Symfony Components.
 
 Requirements
 ------------
