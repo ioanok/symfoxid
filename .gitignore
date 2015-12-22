@@ -1,0 +1,56 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+#Icon?
+ehthumbs.db
+Thumbs.db
+
+# PhpStorm-Project folder
+/.idea/
+
+# Netbeans-Project folder
+/nbproject/
+
+# Node files
+.components
+/node_modules/
+.npm-debug.log
+
+# Symfony
+/app/config/parameters.yml
+/bin/
+/build/
+/composer.phar
+/composer.lock
+/vendor/
+/web/bundles/
+/var/
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+!var/sessions/.gitkeep
+/phpunit.xml
+/app/bootstrap.php.cache
+/app/cache/*
+!app/cache/.gitkeep
+/app/logs/*
+!app/logs/.gitkeep
+/app/phpunit.xml
+
+# Oxid
+/web/.phpstorm-oxid.meta.php
+/web/wendor/
+/web/node_modules/
+/web/npm-debug.log
+/web/composer.lock
+/web/gconfig.json
+/web/.htaccess
+/web/.htpasswd
+/web/config.inc.php
+/web/php_errors.log
+/web/out/pictures
+/web/out/media
+/web/out/downloads
+/web/modules/sologics/sx*-base

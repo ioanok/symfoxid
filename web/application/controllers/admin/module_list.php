@@ -1,0 +1,50 @@
+<?php
+/**
+ * This Software is the property of OXID eSales and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license key
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+ *
+ * @link      http://www.oxid-esales.com
+ * @copyright (C) OXID eSales AG 2003-2015
+ * @version   OXID eShop PE
+ */
+
+/**
+ * Admin actionss manager.
+ * Sets list template, list object class ('oxactions') and default sorting
+ * field ('oxactions.oxtitle').
+ * Admin Menu: Manage Products -> Actions.
+ */
+class Module_List extends oxAdminList
+{
+
+    /**
+     * @var array Loaded modules array
+     *
+     */
+    protected $_aModules = array();
+
+
+    /**
+     * Calls parent::render() and returns name of template to render
+     *
+     * @return string
+     */
+    public function render()
+    {
+        $sModulesDir = $this->getConfig()->getModulesDir();
+
+        $oModuleList = oxNew("oxModuleList");
+        $aModules = $oModuleList->getModulesFromDir($sModulesDir);
+
+        parent::render();
+
+        // assign our list
+        $this->_aViewData['mylist'] = $aModules;
+
+        return 'module_list.tpl';
+    }
+}

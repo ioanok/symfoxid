@@ -1,0 +1,49 @@
+<?php
+/**
+ * This Software is the property of OXID eSales and is protected
+ * by copyright law - it is NOT Freeware.
+ *
+ * Any unauthorized use of this software without a valid license key
+ * is a violation of the license agreement and will be prosecuted by
+ * civil and criminal law.
+
+ * @link      http://www.oxid-esales.com
+ * @copyright (C) OXID eSales AG 2003-2015
+ */
+
+$aLang = array(
+'charset'                                       => 'ISO-8859-15',
+
+'SHOP_THEME_GROUP_images'                       => 'Bilder',
+'SHOP_THEME_GROUP_display'                      => 'Anzeige',
+
+'SHOP_THEME_sIconsize'                          => 'Größe des Icons in Pixeln (Breite*Höhe)',//SHOP_CONFIG_ICONSIZE
+'HELP_SHOP_THEME_sIconsize'                     => 'Icons sind die kleinsten Bilder eines Artikels. Sie werden z. B. <br>' .
+                                                 '<ul><li>im Warenkorb angezeigt</li>' .
+                                                 '<li>angezeigt, wenn Artikel in der Seitenleiste aufgelistet werden (z.B. bei den Aktionen <span class="filename_filepath_or_italic">Top of the Shop</span> und <span class="filename_filepath_or_italic">Schnäppchen</span>).</li></ul>' .
+                                                 'Damit die Harmonie des eShops nicht durch zu große Icons gestört wird, werden zu große Icons automatisch verkleinert. Die maximale Größe können Sie hier eingeben.<br>' ,
+
+'SHOP_THEME_sThumbnailsize'                     => 'Größe des Thumbnails in Pixeln (Breite*Höhe)',//SHOP_CONFIG_THUMBNAILSIZE
+'HELP_SHOP_THEME_sThumbnailsize'                => 'Thumbnails sind kleine Bilder eines Artikels. Sie werden z. B. <br>' .
+                                                 '<ul><li>in Artikellisten angezeigt. Artikellisten sind z. B. Kategorieansichten (alle Artikel in einer Kategorie werden aufgelistet) und die Suchergebnisse.</li>' .
+                                                 '<li>in Aktionen angezeigt, die in der Mitte der Startseite angezeigt werden, z. B. <span class="filename_filepath_or_italic">Die Dauerbrenner</span> und <span class="filename_filepath_or_italic">Frisch eingetroffen!</span>.</li></ul>' .
+                                                 'Damit das Design des eShops nicht durch zu große Thumbnails gestört wird, werden zu große Thumbnails automatisch verkleinert. Die maximale Größe können Sie hier eingeben.',
+
+'SHOP_THEME_sZoomImageSize'                     => 'Größe der Zoom-Bilder (Zoom 1-4) in Pixeln (Breite*Höhe)',//SHOP_CONFIG_ZOOMIMAGESIZE
+'SHOP_THEME_aDetailImageSizes'                  => 'Größe der Artikelbilder  (Bild 1-12) in Pixeln (Breite*Höhe)',//SHOP_CONFIG_DETAILIMAGESIZE
+
+'HELP_SHOP_THEME_sManufacturerIconsize'         => 'Dieses Logo wird auf der Startseite in der Markenlogo-übersicht angezeigt.',
+
+'SHOP_THEME_sCatPromotionsize'                  => 'Größe des Kategoriebildes für die Startseite in Pixeln (Breite*Höhe)',
+'HELP_SHOP_THEME_sCatPromotionsize'             => 'Kategorien, die auf der Startseite beworben werden, benötigen eine eigens dafür vorgesehene Größgenangabe. Stellen Sie diese hier ein.',
+
+'SHOP_THEME_blShowBirthdayFields'               => 'Eingabefeld für das Geburtsdatum anzeigen, wenn Benutzer ihre Daten eingeben',//SHOP_CONFIG_SHOWBIRTHDAYFIELDS
+
+'SHOP_THEME_iNewBasketItemMessage'              => 'Wenn Produkt in den Warenkorb gelegt wird, folgende Aktion ausführen',//SHOP_SYSTEM_SHOWNEWBASKETITEMMESSAGE
+'HELP_SHOP_THEME_iNewBasketItemMessage'         => 'Wenn Konsumenten ein Produkt in den Warenkorb legen, kann der OXID eShop unterschiedliche Feedback-Aktionen durchführen.',//SHOP_SYSTEM_SHOWNEWBASKETITEMMESSAGE
+'SHOP_THEME_iNewBasketItemMessage_0'            => 'Keine',
+'SHOP_THEME_iNewBasketItemMessage_1'            => 'Meldung ausgeben',
+'SHOP_THEME_iNewBasketItemMessage_3'            => 'Warenkorb öffnen',
+
+'SHOP_THEME_aNrofCatArticles'                   => 'Anzahl der Artikel, die in einer Artikelliste pro Seite angezeigt werden können<br><br>Warnung: Eine große Anzahl von Artikeln pro Seite (über 100) kann kann die Geschwindigkeit des Shops erheblich beeinflussen!',
+);
