@@ -8,6 +8,7 @@ Requirements
 
   * PHP 5.3 or higher;
   * PDO-SQLite PHP extension enabled;
+  * [OXID system requirements] (http://www.oxid-esales.com/en/products/facts/oxid-eshop-community-edition/system-requirements.html)
   * and the [usual Symfony application requirements](http://symfony.com/doc/current/reference/requirements.html).
 
 Installation
