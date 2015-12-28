@@ -7,8 +7,8 @@ $sMetadataVersion = '1.0';
  */
 $aModule = array(
     'id'            => 'sxsymfony',
-    'title'         => 'Sologics :: Symfony Bridge',
-    'description'   => 'Integration for oxid with symfony components.',
+    'title'         => 'Sologics :: Symfony Bridge Module',
+    'description'   => 'OXID integration with Symfony components.',
     'thumbnail'     => 'picture.png',
     'version'       => '1.0.0-dev',
     'author'        => 'Sologics',
