@@ -7,6 +7,8 @@
  */
 
 use Symfony\Component\Debug;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * Class sxSymfonyOxShopControl
@@ -14,6 +16,67 @@ use Symfony\Component\Debug;
  */
 class sxSymfonyOxShopControl extends sxSymfonyOxShopControl_parent
 {
+    /**
+     * @var ContainerInterface
+     */
+    private $container;
+
+    /**
+     * Main shop manager, that sets shop status, executes configuration methods.
+     * Executes oxShopControl::_runOnce(), if needed sets default class (according
+     * to admin or regular activities). Additionally its possible to pass class name,
+     * function name and parameters array to view, which will be executed.
+     *
+     * @param string $sClass      Class name
+     * @param string $sFunction   Function name
+     * @param array  $aParams     Parameters array
+     * @param array  $aViewsChain Array of views names that should be initialized also
+     */
+    public function start($sClass = null, $sFunction = null, $aParams = null, $aViewsChain = null)
+    {
+        $this->registerContainerBuilder();
+        //$this->registerExtensionLoader();
+
+        parent::start($sClass, $sFunction, $aParams, $aViewsChain);
+    }
+
+    /**
+     * Adds Symfony ContainerBuilder to OXID registry
+     */
+    private function registerContainerBuilder()
+    {
+        oxRegistry::set('container', new ContainerBuilder());
+    }
+
+    private function registerExtensionLoader()
+    {
+        $extensionLoader = new ExtensionLoader();
+        $extensionLoader->setContainer($this->getContainer());
+        $this->getContainer()->set('as.extension_loader', $extensionLoader);
+    }
+
+    /**
+     * @param ContainerInterface $container
+     */
+    public function setContainer(ContainerInterface $container)
+    {
+        $this->container = $container;
+    }
+
+    /**
+     * @return ContainerInterface
+     */
+    public function getContainer()
+    {
+        if ($this->container === null) {
+            $this->container = \oxRegistry::get('container');
+        }
+        return $this->container;
+    }
+
+
+
+
     /**
      * Sets default exception handler.
      *
